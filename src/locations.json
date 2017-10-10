@@ -1,0 +1,326 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Unknown",
+        "description": "Q637298"
+      },
+      "geometry": {
+        "coordinates": [
+          -2.40563,
+          52.235572
+        ],
+        "type": "Point"
+      },
+      "id": "2a21c66d855aeaab9b0af8399ed39fa4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "May 2, 1982",
+        "place_name": "Unknown"
+      },
+      "geometry": {
+        "coordinates": [
+          -5.2605,
+          50.034494
+        ],
+        "type": "Point"
+      },
+      "id": "73395fcd84ad39f1eb05d5cc1232d5f3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Unknown"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.947485,
+          50.594724
+        ],
+        "type": "Point"
+      },
+      "id": "739d00531fb1a07dba79c817019009e9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "April 28, 1982",
+        "place_name": "Unknown"
+      },
+      "geometry": {
+        "coordinates": [
+          -5.657201,
+          50.047739
+        ],
+        "type": "Point"
+      },
+      "id": "8208cc1b620032ddcb5094d72cc4875c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "April 28, 1982",
+        "place_name": "Unknown"
+      },
+      "geometry": {
+        "coordinates": [
+          -5.714566,
+          50.066407
+        ],
+        "type": "Point"
+      },
+      "id": "ad195d8ab1cbe267b28ca0bddad26a6c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Marsden",
+        "date": "June 12, 1982"
+      },
+      "geometry": {
+        "coordinates": [
+          -1.927736,
+          53.600671
+        ],
+        "type": "Point"
+      },
+      "id": "bd89fe5252465691ffd92ebf9607f4fc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "May 3, 1982",
+        "place_name": "Unknown"
+      },
+      "geometry": {
+        "coordinates": [
+          -5.110126,
+          50.339817
+        ],
+        "type": "Point"
+      },
+      "id": "cdb360b1965918d14e30ebc95d1d71d9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "John O'Groats"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.070036,
+          58.644008
+        ],
+        "type": "Point"
+      },
+      "id": "d3768bccb923aaf13e9a4ad2ed54d486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q772614",
+        "place_name": "St. Austell, Cornwall, England, United Kingdom"
+      },
+      "geometry": {
+        "coordinates": [
+          -4.7818,
+          50.3431
+        ],
+        "type": "Point"
+      },
+      "id": "place.12547858258144940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q1247558",
+        "place_name": "Malham, North Yorkshire, England, United Kingdom",
+        "date": "June 16, 1982"
+      },
+      "geometry": {
+        "coordinates": [
+          -2.1537,
+          54.0607
+        ],
+        "type": "Point"
+      },
+      "id": "place.15862637642092320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q2362440",
+        "place_name": "Upton-upon-Severn, Worcestershire, England, United Kingdom"
+      },
+      "geometry": {
+        "coordinates": [
+          -2.2151,
+          52.0611
+        ],
+        "type": "Point"
+      },
+      "id": "place.16493877417555720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q22889",
+        "place_name": "Bath, Bath And North East Somerset, England, United Kingdom",
+        "date": "May 22, 1982"
+      },
+      "geometry": {
+        "coordinates": [
+          -2.3597,
+          51.3814
+        ],
+        "type": "Point"
+      },
+      "id": "place.2603486057877650"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q207371",
+        "place_name": "Lichfield, Staffordshire, England, United Kingdom",
+        "date": "June 2, 1982"
+      },
+      "geometry": {
+        "coordinates": [
+          -1.8275,
+          52.6844
+        ],
+        "type": "Point"
+      },
+      "id": "place.3587778562726570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q3847856",
+        "place_name": "Slimbridge, Gloucestershire, England, United Kingdom",
+        "date": "May 25, 1982"
+      },
+      "geometry": {
+        "coordinates": [
+          -2.3805,
+          51.7316
+        ],
+        "type": "Point"
+      },
+      "id": "place.3836200581959420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q212283",
+        "place_name": "Wells, Somerset, England, United Kingdom",
+        "visting": "Stan Easton"
+      },
+      "geometry": {
+        "coordinates": [
+          -2.6471,
+          51.2092
+        ],
+        "type": "Point"
+      },
+      "id": "place.3868208557889670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q1225663",
+        "place_name": "Wiveliscombe, Somerset, England, United Kingdom",
+        "date": "May 15, 1982"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.31,
+          51.0421
+        ],
+        "type": "Point"
+      },
+      "id": "place.7458116716940470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q785918",
+        "place_name": "Kegworth, Leicestershire, England, United Kingdom",
+        "date": "June 4, 1982"
+      },
+      "geometry": {
+        "coordinates": [
+          -1.2779,
+          52.8355
+        ],
+        "type": "Point"
+      },
+      "id": "place.7665858705579140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q637298",
+        "place_name": "Tiverton, Devon, England, United Kingdom"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.4892,
+          50.9027
+        ],
+        "type": "Point"
+      },
+      "id": "place.8944803432043430"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q2428906",
+        "place_name": "Kinver, Staffordshire, England, United Kingdom"
+      },
+      "geometry": {
+        "coordinates": [
+          -2.2285,
+          52.4481
+        ],
+        "type": "Point"
+      },
+      "id": "place.9027500687662790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q889888",
+        "place_name": "Bodmin, Cornwall, England, United Kingdom"
+      },
+      "geometry": {
+        "coordinates": [
+          -4.7243,
+          50.4707
+        ],
+        "type": "Point"
+      },
+      "id": "place.9768272545377720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q798906",
+        "place_name": "Penrith, Cumbria, England, United Kingdom",
+        "date": "June 22, 1982"
+      },
+      "geometry": {
+        "coordinates": [
+          -2.7527,
+          54.6636
+        ],
+        "type": "Point"
+      },
+      "id": "place.9899119967671510"
+    }
+  ],
+  "type": "FeatureCollection"
+}
