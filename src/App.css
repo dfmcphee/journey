@@ -22,10 +22,10 @@ body {
   padding: 1.6rem 1.6rem 3.2rem;
   z-index: 999;
   transition: all 250ms ease-in-out;
-  min-height: 300px;
+  min-height: 13rem;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
 }
 
 .information-overlay__date {

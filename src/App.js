@@ -11,6 +11,18 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 const TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
 
+function updateSelectedWaypoint(selectedWaypoint, location, height, width) {
+  return {
+    selectedWaypoint,
+    viewport: {
+      height,
+      width,
+      latitude: location.geometry.coordinates[1] - 0.1,
+      longitude: location.geometry.coordinates[0]
+    }
+  };
+}
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -59,18 +71,9 @@ class App extends Component {
       if (selectedWaypoint === locations.length - 1) { return; }
 
       const newlySelected = selectedWaypoint + 1;
-
       const location = locations[newlySelected];
 
-      return {
-        selectedWaypoint: newlySelected,
-        viewport: {
-          height: viewport.height,
-          width: viewport.width,
-          latitude: location.geometry.coordinates[1] - 0.1,
-          longitude: location.geometry.coordinates[0]
-        }
-      };
+      return updateSelectedWaypoint(newlySelected, location, viewport.height, viewport.width);
     });
   }
 
@@ -79,18 +82,9 @@ class App extends Component {
       if (selectedWaypoint === 0) { return; }
 
       const newlySelected = selectedWaypoint - 1;
-
       const location = locations[newlySelected];
 
-      return {
-        selectedWaypoint: newlySelected,
-        viewport: {
-          height: viewport.height,
-          width: viewport.width,
-          latitude: location.geometry.coordinates[1] - 0.1,
-          longitude: location.geometry.coordinates[0]
-        }
-      };
+      return updateSelectedWaypoint(newlySelected, location, viewport.height, viewport.width);
     });
   }
 
@@ -136,6 +130,16 @@ class App extends Component {
   _updateViewport = (viewport) => {
     this.setState({ viewport });
   }
+
+  changeSelected = () => {
+    this.setState({
+      viewport: {
+        ...this.state.viewport,
+        width: this.props.width || window.innerWidth,
+        height: this.props.height || window.innerHeight
+      }
+    });
+  };
 
   render() {
     const {viewport, locations, selectedWaypoint} = this.state;
