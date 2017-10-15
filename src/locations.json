@@ -48,7 +48,8 @@
       "type": "Feature",
       "properties": {
         "date": "April 28, 1982",
-        "place_name": "Lands End"
+        "place_name": "Lands End",
+        "banner_image": "https://cdn.pbrd.co/images/GOYXRdY.jpg"
       },
       "geometry": {
         "coordinates": [
@@ -93,7 +94,8 @@
       "type": "Feature",
       "properties": {
         "place_name": "John O'Groats",
-        "date": "July 29, 1982"
+        "date": "July 29, 1982",
+        "banner_image": "https://cdn.pbrd.co/images/GOZdQDV.jpg"
       },
       "geometry": {
         "coordinates": [

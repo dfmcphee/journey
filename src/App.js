@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import MapGL, {Marker} from 'react-map-gl';
 import {Motion, spring} from 'react-motion';
+import Swipeable from 'react-swipeable';
 
 import geography from './locations.json';
 import Pin from './Pin';
@@ -9,15 +10,6 @@ import './App.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 const TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
-
-function slugify(text) {
-  return text.toString().toLowerCase()
-    .replace(/\s+/g, '-')           // Replace spaces with -
-    .replace(/[^\w-]+/g, '')       // Remove all non-word chars
-    .replace(/--+/g, '-')         // Replace multiple - with single -
-    .replace(/^-+/, '')             // Trim - from start of text
-    .replace(/-+$/, '');            // Trim - from end of text
-}
 
 class App extends Component {
   constructor(props) {
@@ -60,6 +52,46 @@ class App extends Component {
   componentWillUnmount() {
     window.removeEventListener('keyup', this._handleKeypress);
     window.removeEventListener('resize', this._handleResize);
+  }
+
+  _handleSwipeLeft = (e, absX) => {
+    this.setState(({ selectedWaypoint, locations, viewport }) => {
+      if (selectedWaypoint === locations.length - 1) { return; }
+
+      const newlySelected = selectedWaypoint + 1;
+
+      const location = locations[newlySelected];
+
+      return {
+        selectedWaypoint: newlySelected,
+        viewport: {
+          height: viewport.height,
+          width: viewport.width,
+          latitude: location.geometry.coordinates[1] - 0.1,
+          longitude: location.geometry.coordinates[0]
+        }
+      };
+    });
+  }
+
+  _handleSwipeRight = (e, absX) => {
+    this.setState(({ selectedWaypoint, locations, viewport }) => {
+      if (selectedWaypoint === 0) { return; }
+
+      const newlySelected = selectedWaypoint - 1;
+
+      const location = locations[newlySelected];
+
+      return {
+        selectedWaypoint: newlySelected,
+        viewport: {
+          height: viewport.height,
+          width: viewport.width,
+          latitude: location.geometry.coordinates[1] - 0.1,
+          longitude: location.geometry.coordinates[0]
+        }
+      };
+    });
   }
 
   _handleKeypress = (evt) => {
@@ -132,6 +164,24 @@ class App extends Component {
       ? locations[selectedWaypoint].properties.date.toLocaleDateString('en-US')
       : null;
 
+    const informationOverlayStyles = {};
+
+    if (locations[selectedWaypoint].properties.banner_image) {
+      informationOverlayStyles.backgroundImage = `url(${locations[selectedWaypoint].properties.banner_image})`;
+    }
+
+    const informationOverlay = (
+      <Swipeable
+        onSwipedLeft={this._handleSwipeLeft}
+        onSwipedRight={this._handleSwipeRight}
+      >
+        <div className="information-overlay" style={informationOverlayStyles}>
+          <p className="information-overlay__date">{date}</p>
+          <p className="information-overlay__name">{placeName}</p>
+        </div>
+      </Swipeable>
+    );
+
     return (
       <div className="App">
         <Motion style={{
@@ -153,10 +203,7 @@ class App extends Component {
             {markers}
           </MapGL>}
         </Motion>
-        <div className={`information-overlay information-overlay--${slugify(placeName)}`}>
-          <p className="information-overlay__date">{date}</p>
-          <p className="information-overlay__name">{placeName}</p>
-        </div>
+        {informationOverlay}
       </div>
     );
   }

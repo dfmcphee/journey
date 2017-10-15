@@ -36,14 +36,6 @@ body {
   font-size: 2.4rem;
 }
 
-.information-overlay--lands-end {
-  background-image: url(https://cdn.pbrd.co/images/GOYXRdY.jpg);
-}
-
-.information-overlay--john-ogroats {
-  background-image: url(https://cdn.pbrd.co/images/GOZdQDV.jpg);
-}
-
 .information-overlay:after {
   display: block;
   content: '';
