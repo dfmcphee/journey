@@ -6,6 +6,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-map-gl": "^3.0.4",
+    "react-motion": "^0.5.2",
     "react-scripts": "1.0.14"
   },
   "scripts": {
